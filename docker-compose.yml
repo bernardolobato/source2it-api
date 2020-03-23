@@ -28,7 +28,7 @@ services:
       - postgres-compose-network
       
   source2it-api:
-    image: source2itapi:latest
+    image: bernardolobato/source2itapi:latest
     environment:
       SPRING_DATASOURCE_URL:  "jdbc:postgresql://postgres-compose:5432/source-it-api"
       SPRING_DATASOURCE_USERNAME: "postgres"
