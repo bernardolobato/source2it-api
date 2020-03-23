@@ -12,7 +12,6 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 public class UsuarioForm {
-    Long id;
     String nome;
     @JsonFormat
           (shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")          
@@ -30,7 +29,7 @@ public class UsuarioForm {
     }
 
     public Usuario converter() {
-        return new Usuario(this.id, this.nome, this.dataNascimento, this.email, this.password);
+        return new Usuario(null, this.nome, this.dataNascimento, this.email, this.password);
     }
 
 }

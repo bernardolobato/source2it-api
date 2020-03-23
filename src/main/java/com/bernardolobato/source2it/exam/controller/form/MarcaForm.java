@@ -9,8 +9,6 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class MarcaForm {
-    Long id;
-
     @NotBlank
     @UniqueBrandValidator
     String nome;
@@ -19,6 +17,6 @@ public class MarcaForm {
     }
 
     public Marca converter() {
-        return new Marca(this.id, this.nome);
+        return new Marca(null, this.nome);
     }
 }

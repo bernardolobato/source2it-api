@@ -9,11 +9,11 @@
 		<relativePath/>
 		<!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bernardolobato.poc</groupId>
-	<artifactId>poc-servicos</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<groupId>com.bernardolobato</groupId>
+	<artifactId>source2it-api</artifactId>
+	<version>1.0</version>
+	<name>Source2IT Api Exam</name>
+	<description>Api exam to Source2IT</description>
 
 	<properties>
 		<java.version>1.8</java.version>

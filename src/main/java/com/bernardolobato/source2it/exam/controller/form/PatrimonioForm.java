@@ -9,7 +9,6 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class PatrimonioForm {
-    Long id;
     @NotBlank
     String nome;
     @NotBlank
@@ -21,6 +20,6 @@ public class PatrimonioForm {
     }
 
     public Patrimonio converter() {
-        return new Patrimonio(this.id, this.nome, this.descricao, null);
+        return new Patrimonio(null, this.nome, this.descricao, null);
     }
 }
